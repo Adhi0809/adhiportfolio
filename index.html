@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adhithiyan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+<header>
+  <h1 class="logo">AD</h1>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="actions">
+    <button id="themeBtn">🌙</button>
+    <div class="menu" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<section id="home" class="hero reveal">
+  <h2>Hello, I'm <span>Adhithiyan</span></h2>
+  <p>Frontend Developer | JavaScript Enthusiast</p>
+  <button onclick="scrollToSection('contact')">Hire Me</button>
+</section>
+
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p>
+    I build responsive, interactive and user-friendly web applications using
+    modern frontend technologies.
+  </p>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div class="skill-box">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Bootstrap</div>
+    <div>MySQL</div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Dark/Light mode responsive website</p>
+    </div>
+    <div class="card">
+      <h3>Admin Dashboard</h3>
+      <p>Product & order management system</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <h2>Contact Me</h2>
+  <form onsubmit="return sendMessage()">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Adhithiyan. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
